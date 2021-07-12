@@ -1,8 +1,8 @@
-### Installation
+## Installation
 
 You need to first install detectron2 according to its [documentation](https://detectron2.readthedocs.io/en/latest/tutorials/install.html), and then run `python setup.py develop`.
 
-### Prepare Dataset
+## Prepare Dataset
 
 This section shows how to convert detection or MOT dataset to Video COCO style, which is defined as follows. Items marked with * are added for tracking. (MOTS dataset is also supported and will be released later.)
 
@@ -31,7 +31,7 @@ This section shows how to convert detection or MOT dataset to Video COCO style, 
     - supercategory
 ```
 
-#### BDD100K MOT
+### BDD100K MOT
 
 ```bash
 ln -s /path/to/bdd100k datasets/bdd100k
@@ -43,7 +43,7 @@ python datasets/convert_dataset_to_coco_style.py bdd100k-mot \
     --out_file datasets/bdd100k/bdd100k_box_track_20_val.json
 ```
 
-#### BDD100K Detection
+### BDD100K Detection
 
 ```bash
 ln -s /path/to/bdd100k datasets/bdd100k
